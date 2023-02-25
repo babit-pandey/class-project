@@ -1,0 +1,18 @@
+
+Creating a standard Marksheet using MS Excel is a straightforward process. Here is how I created mine:
+
+I started by opening Excel and making a spreadsheet called "Marksheet." I wrote the college name and styled it appropriately using the cell style tool after leaving the first row and merging the second and third rows. So, in order to provide a space between rows, I merged column in the fourth row. I began entering my information on the fifth row, such as my name, roll number, class, and section and styled it appropriately using the cell style tool. Leaving the room between the rows, I started the actual marksheet from row seven. I entered headings like S/N, Subject, Marks Obtained, Grade, and Remarks. And I entered the information corresponding to the heading in the next six rows.
+
+•	I used the formula "=SUM(H10:I10)" and dragged to fill the whole Total marks column to calculated the total marks for each subject.
+•	I used the formula "=(J10/100)*4" and dragged to fill out the entire column to determine the GPA for each subject.
+•	I used the formula "=IF(K10>=3.6,"A+,"IF(K10>=3.2,"A",IF(K10>=2.8,"B+,"IF(K10>=2.4,"B",IF(K10>=2,"C+,"IF(K10>=1.6,"C",IF(K10>=1.2,"D+")))))))) " to compute the grade for each subject.
+•	I used the formula "=IF(AND(H10>=30),"Pass ", "Fail")" and dragged to fill out the full column to obtain the Remarks for each subject.
+
+I used conditional formatting to highlight red in any cells with a failing grade or a mark below 40% of the overall marks. I also divided divisions for total marks obtained, total GPA, final grade and final result and I stylized them suitably as well.
+•	I used the formula "=SUM (J10:J15)" to determine the overall marks I received.
+•	I used the formula "=SUM (K10:K15)/6" to determine the overall GPA.
+•	I used the formula "=IF(H18>=3.6,"A+,"IF(H18>=3.2,"A", IF(H18>=2.8,"B+,"IF(H18>=2.4,"B", IF(H18>=2,"C+,"IF(H18>=1.6,"C", IF(H18>=1.2,"D+"))))))) to determine the final grade.
+•	I used the formula "=IF(AND(M10="Pass,"M11="Pass,"M12="Pass,"M13="Pass,"M14="Pass,"M15="Pass"),"Pass", "Fail")" to determine the result.
+
+Finally, I styled the grade sheet appropriately.
+In conclusion, creating a standard mark sheet using MS Excel is a simple process that requires the use of basic formulas and formatting tools. It helps to organize the data effectively and allows for easy tracking of the student's academic performance.
